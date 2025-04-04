@@ -1,53 +1,88 @@
-import React, { useState } from "react";
+import React from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import ProtectedRoute from "./components/Week 27/W28-D4/ProtectedRoute";
-import Login from "./components/Week 27/W28-D4/Login";
-import Register from "./components/Week 27/W28-D4/Register";
-import Main from "./components/Week 27/W28-D4/Main";
-import Projects from "./components/Week 27/W28-D4/Projects";
-import ProjectDetail from "./components/Week 27/W28-D4/ProjectDetail";
+import ValidationHW from './components/Week 27/W29-D1/ValidationHW'
 
-function App() {
-  const [isAuth, setIsAuth] = useState(false);
-
+export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
-        <Route path="/login/register" element={<Register />} />
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute isAuth={isAuth}>
-              <Main />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/projects"
-          element={
-            <ProtectedRoute isAuth={isAuth}>
-              <Projects />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/projects/:id"
-          element={
-            <ProtectedRoute isAuth={isAuth}>
-              <ProjectDetail />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route path="*" element={<Navigate to="/login" />} />
-      </Routes>
-      </BrowserRouter>
-  );
+    <div>
+      <ValidationHW/>
+    </div>
+  )
 }
 
-export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import './App.css'
+// import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// import ProtectedRoute from "./components/Week 27/W28-D4/ProtectedRoute";
+// import Login from "./components/Week 27/W28-D4/Login";
+// import Register from "./components/Week 27/W28-D4/Register";
+// import Main from "./components/Week 27/W28-D4/Main";
+// import Projects from "./components/Week 27/W28-D4/Projects";
+// import ProjectDetail from "./components/Week 27/W28-D4/ProjectDetail";
+
+
+// function App() {
+//   const [isAuth, setIsAuth] = useState(false);
+
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+//         <Route path="/login/register" element={<Register />} />
+//         <Route
+//           path="/"
+//           element={
+//             <ProtectedRoute isAuth={isAuth}>
+//               <Main />
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route
+//           path="/projects"
+//           element={
+//             <ProtectedRoute isAuth={isAuth}>
+//               <Projects />
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route
+//           path="/projects/:id"
+//           element={
+//             <ProtectedRoute isAuth={isAuth}>
+//               <ProjectDetail />
+//             </ProtectedRoute>
+//           }
+//         />
+
+//         <Route path="*" element={<Navigate to="/login" />} />
+//       </Routes>
+//       </BrowserRouter>
+//   );
+// }
+
+// export default App;
 
 
 
