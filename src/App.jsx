@@ -1,14 +1,57 @@
-import React from 'react'
+import React from 'react';
+import Test from './components/Week 27/W30-D2/Test';
+import LanProvider from './components/Week 27/W30-D2/LanProvider';
 import './App.css'
-import ValidationHW from './components/Week 27/W29-D1/ValidationHW'
 
 export default function App() {
   return (
-    <div>
-      <ValidationHW/>
-    </div>
-  )
-}
+    <LanProvider>
+      <div className='bordered'>
+        <h1> HomeWork useContext</h1>
+        <Test />
+      </div>
+    </LanProvider>
+  );
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import './App.css'
+// import ValidationHW from './components/Week 27/W29-D1/ValidationHW'
+
+// export default function App() {
+//   return (
+//     <div>
+//       <ValidationHW/>
+//     </div>
+//   )
+// }
 
 
 
