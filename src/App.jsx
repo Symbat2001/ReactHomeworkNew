@@ -1,18 +1,51 @@
-import React from 'react';
-import Test from './components/Week 27/W30-D2/Test';
-import LanProvider from './components/Week 27/W30-D2/LanProvider';
+import React from 'react'
 import './App.css'
+import HWReducer from './components/Week 27/W31-D1/HWReducer'
 
 export default function App() {
   return (
-    <LanProvider>
-      <div className='bordered'>
-        <h1> HomeWork useContext</h1>
-        <Test />
-      </div>
-    </LanProvider>
-  );
-} 
+    <div>
+      <HWReducer/>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// W30-D2
+// import React from 'react';
+// import Test from './components/Week 27/W30-D2/Test';
+// import LanProvider from './components/Week 27/W30-D2/LanProvider';
+// import './App.css'
+
+// export default function App() {
+//   return (
+//     <LanProvider>
+//       <div className='bordered'>
+//         <h1> HomeWork useContext</h1>
+//         <Test />
+//       </div>
+//     </LanProvider>
+//   );
+// } 
 
 
 
